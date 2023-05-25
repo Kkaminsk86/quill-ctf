@@ -47,7 +47,7 @@ contract Hack is Test {
         // solution:
 
         // Call becomeMember() 5 times with specially crafted arrays. Manipulating block gas amounts
-        // Lack of validation of array elements. Array elements can be the same account hacker account addresses
+        // Lack of validation of array elements. Array elements can be the same hacker account addresses
         for (uint i; i < 5; i++) {
             address[] memory mForHacker = new address[](club.membersCount());
             for (uint i; i < club.membersCount(); i++) {
